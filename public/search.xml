@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Github+Node.js+Hexo搭建个人网站</title>
+    <url>/2021/02/26/Github-HexoBuildAPersonalWebsite/</url>
+    <content><![CDATA[<h1 id="个人网站方案之Github-Node-js-Hexo"><a href="#个人网站方案之Github-Node-js-Hexo" class="headerlink" title="个人网站方案之Github+Node.js+Hexo"></a>个人网站方案之Github+Node.js+Hexo</h1><h2 id="搭建步骤："><a href="#搭建步骤：" class="headerlink" title="搭建步骤："></a>搭建步骤：</h2><ul>
+<li>获得个人网站域名（非必选项）</li>
+<li>新建Github账号并创建个人仓库</li>
+<li>安装Git</li>
+<li>安装Node.js</li>
+<li>推送网站</li>
+<li>绑定域名（非必选项）</li>
+<li>更换主题</li>
+<li>学习MarkDown语法</li>
+<li>发布文章</li>
+<li>寻找图床</li>
+<li>个性化设置</li>
+<li>其他</li>
+</ul>
+]]></content>
+      <categories>
+        <category>菜鸟小课堂</category>
+      </categories>
+      <tags>
+        <tag>Github</tag>
+        <tag>Hexo</tag>
+        <tag>Node.js</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Test_My_Site</title>
     <url>/2021/02/26/test-my-site/</url>
     <content><![CDATA[<p>Just for test.</p>
