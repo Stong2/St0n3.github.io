@@ -23,20 +23,28 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"stone-zheng.cn","root":"/","images":"/images","scheme":"Pisces","version":"8.2.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/./public/search.xml","localsearch":{"enable":"ture","trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
-<meta name="description" content="个人网站方案之Github+Node.js+Hexo搭建步骤： 获得个人网站域名（非必选项） 新建Github账号并创建个人仓库 安装Git 安装Node.js 推送网站 绑定域名（非必选项） 更换主题 学习MarkDown语法 发布文章 寻找图床 个性化设置 其他获得个人网站域名（非必选项）域名是网站的入口，常见的后缀有com，cn，org等，">
+<meta name="description" content="个人网站方案之Github+Node.js+Hexo搭建步骤： 获得个人网站域名（非必选项） 新建Github账号并创建个人仓库 安装Git 安装Node.js 推送网站 绑定域名（非必选项） 更换主题 学习MarkDown语法 发布文章 寻找图床 个性化设置 其他获得个人网站域名（非必选项）域名是网站的入口，常见的后缀有com，cn，org等。通过网域名称系统（DNS，Domain Name S">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Github+Node.js+Hexo搭建个人网站">
 <meta property="og:url" content="http://stone-zheng.cn/2021/02/26/Github-HexoBuildAPersonalWebsite/index.html">
 <meta property="og:site_name" content="St0n3&#39;s Home">
-<meta property="og:description" content="个人网站方案之Github+Node.js+Hexo搭建步骤： 获得个人网站域名（非必选项） 新建Github账号并创建个人仓库 安装Git 安装Node.js 推送网站 绑定域名（非必选项） 更换主题 学习MarkDown语法 发布文章 寻找图床 个性化设置 其他获得个人网站域名（非必选项）域名是网站的入口，常见的后缀有com，cn，org等，">
+<meta property="og:description" content="个人网站方案之Github+Node.js+Hexo搭建步骤： 获得个人网站域名（非必选项） 新建Github账号并创建个人仓库 安装Git 安装Node.js 推送网站 绑定域名（非必选项） 更换主题 学习MarkDown语法 发布文章 寻找图床 个性化设置 其他获得个人网站域名（非必选项）域名是网站的入口，常见的后缀有com，cn，org等。通过网域名称系统（DNS，Domain Name S">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://stone-md-images-1252234645.cos.ap-nanjing.myqcloud.com/Stong2-github-io.jpg">
+<meta property="og:image" content="https://stone-md-images-1252234645.cos.ap-nanjing.myqcloud.com/image-20210305221048243.png">
+<meta property="og:image" content="https://stone-md-images-1252234645.cos.ap-nanjing.myqcloud.com/image-20210305221529909.png">
+<meta property="og:image" content="https://stone-md-images-1252234645.cos.ap-nanjing.myqcloud.com/image-20210305221838421.png">
+<meta property="og:image" content="https://stone-md-images-1252234645.cos.ap-nanjing.myqcloud.com/image-20210305221904851.png">
+<meta property="og:image" content="https://stone-md-images-1252234645.cos.ap-nanjing.myqcloud.com/image-20210305222539014.png">
+<meta property="og:image" content="https://stone-md-images-1252234645.cos.ap-nanjing.myqcloud.com/image-20210305223127221.png">
 <meta property="article:published_time" content="2021-02-26T07:45:33.000Z">
-<meta property="article:modified_time" content="2021-02-26T12:12:28.580Z">
+<meta property="article:modified_time" content="2021-03-08T00:19:38.728Z">
 <meta property="article:author" content="St0n3">
 <meta property="article:tag" content="Github">
 <meta property="article:tag" content="Hexo">
 <meta property="article:tag" content="Node.js">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://stone-md-images-1252234645.cos.ap-nanjing.myqcloud.com/Stong2-github-io.jpg">
 
 
 <link rel="canonical" href="http://stone-zheng.cn/2021/02/26/Github-HexoBuildAPersonalWebsite/">
@@ -190,7 +198,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%96%B9%E6%A1%88%E4%B9%8BGithub-Node-js-Hexo"><span class="nav-number">1.</span> <span class="nav-text">个人网站方案之Github+Node.js+Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%90%AD%E5%BB%BA%E6%AD%A5%E9%AA%A4%EF%BC%9A"><span class="nav-number">1.1.</span> <span class="nav-text">搭建步骤：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%8E%B7%E5%BE%97%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E5%9F%9F%E5%90%8D%EF%BC%88%E9%9D%9E%E5%BF%85%E9%80%89%E9%A1%B9%EF%BC%89"><span class="nav-number">1.1.1.</span> <span class="nav-text">获得个人网站域名（非必选项）</span></a></li></ol></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E6%96%B9%E6%A1%88%E4%B9%8BGithub-Node-js-Hexo"><span class="nav-number">1.</span> <span class="nav-text">个人网站方案之Github+Node.js+Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%90%AD%E5%BB%BA%E6%AD%A5%E9%AA%A4%EF%BC%9A"><span class="nav-number">1.1.</span> <span class="nav-text">搭建步骤：</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%8E%B7%E5%BE%97%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99%E5%9F%9F%E5%90%8D%EF%BC%88%E9%9D%9E%E5%BF%85%E9%80%89%E9%A1%B9%EF%BC%89"><span class="nav-number">1.1.0.1.</span> <span class="nav-text">获得个人网站域名（非必选项）</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%96%B0%E5%BB%BAGithub%E8%B4%A6%E5%8F%B7%E5%B9%B6%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E4%BB%93%E5%BA%93"><span class="nav-number">1.1.0.2.</span> <span class="nav-text">新建Github账号并创建个人仓库</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%AE%89%E8%A3%85Git"><span class="nav-number">1.1.0.3.</span> <span class="nav-text">安装Git</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%AE%89%E8%A3%85Node-js"><span class="nav-number">1.1.0.4.</span> <span class="nav-text">安装Node.js</span></a></li></ol></li></ol></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -292,10 +300,16 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2021-02-26 15:45:33 / 修改时间：20:12:28" itemprop="dateCreated datePublished" datetime="2021-02-26T15:45:33+08:00">2021-02-26</time>
+      <time title="创建时间：2021-02-26 15:45:33" itemprop="dateCreated datePublished" datetime="2021-02-26T15:45:33+08:00">2021-02-26</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-03-08 08:19:38" itemprop="dateModified" datetime="2021-03-08T08:19:38+08:00">2021-03-08</time>
+      </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-folder"></i>
@@ -316,7 +330,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h1 id="个人网站方案之Github-Node-js-Hexo"><a href="#个人网站方案之Github-Node-js-Hexo" class="headerlink" title="个人网站方案之Github+Node.js+Hexo"></a>个人网站方案之Github+Node.js+Hexo</h1><h2 id="搭建步骤："><a href="#搭建步骤：" class="headerlink" title="搭建步骤："></a>搭建步骤：</h2><ul>
+        <h2 id="个人网站方案之Github-Node-js-Hexo"><a href="#个人网站方案之Github-Node-js-Hexo" class="headerlink" title="个人网站方案之Github+Node.js+Hexo"></a>个人网站方案之Github+Node.js+Hexo</h2><h3 id="搭建步骤："><a href="#搭建步骤：" class="headerlink" title="搭建步骤："></a>搭建步骤：</h3><ul>
 <li>获得个人网站域名（非必选项）</li>
 <li>新建Github账号并创建个人仓库</li>
 <li>安装Git</li>
@@ -328,8 +342,30 @@
 <li>发布文章</li>
 <li>寻找图床</li>
 <li>个性化设置</li>
-<li>其他<h3 id="获得个人网站域名（非必选项）"><a href="#获得个人网站域名（非必选项）" class="headerlink" title="获得个人网站域名（非必选项）"></a>获得个人网站域名（非必选项）</h3>域名是网站的入口，常见的后缀有com，cn，org等，</li>
+<li>其他<h5 id="获得个人网站域名（非必选项）"><a href="#获得个人网站域名（非必选项）" class="headerlink" title="获得个人网站域名（非必选项）"></a>获得个人网站域名（非必选项）</h5>域名是网站的入口，常见的后缀有com，cn，org等。通过网域名称系统（DNS，Domain Name System）来将域名和IP地址相互映射，使人更方便地访问互联网，而不用去记住能够被机器直接读取的IP地址数串。<br>申请域名的地方很多，阿里云、腾讯云、华为云等，而申请域名也是本次建站过程中唯一需要花钱的步骤。但是这一步非必选项，也可以用后面的GitHub仓库名。</li>
 </ul>
+<h5 id="新建Github账号并创建个人仓库"><a href="#新建Github账号并创建个人仓库" class="headerlink" title="新建Github账号并创建个人仓库"></a>新建Github账号并创建个人仓库</h5><p>首先，登录到Github，如果没有Github账号，使用你的邮箱注册。<a target="_blank" rel="noopener" href="https://github.com/">Github.com</a><br>其次，点击Github中的New repository创建新仓库，仓库名应该为：username.github.io。username用Github账号名称代替，这是固定写法。<br>比如这样：<img src="https://stone-md-images-1252234645.cos.ap-nanjing.myqcloud.com/Stong2-github-io.jpg" alt="截图"></p>
+<h5 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h5><p>Git是开源的分布式版本控制系统，用于敏捷高效地处理项目。我们网站在本地搭好后就需要使用Git挂（同）载（布）到<del>著名同性交友网站</del>GitHub上面，而想要了解git的具体操作细节，可以自行查看<a target="_blank" rel="noopener" href="https://git-scm.com/book/zh/v2/%E8%B5%B7%E6%AD%A5-%E5%85%B3%E4%BA%8E%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6">官方文档</a>。另外在此强烈推荐<a target="_blank" rel="noopener" href="https://www.liaoxuefeng.com/">廖雪峰大大</a>的<a target="_blank" rel="noopener" href="https://www.liaoxuefeng.com/wiki/896043488029600">Git教程</a>。话不多说，Git的<a target="_blank" rel="noopener" href="https://git-scm.com/downloads">下载地址</a>。下载安装后在命令行中输入<strong>git</strong>，以测试查看是否安装成功。若失败，请使用搜索引擎通过报错来排障；若成功，则需要将你的Git与GitHub账号绑定。步骤如下：</p>
+<p>鼠标右键打开Git Bash</p>
+<p><img src="https://stone-md-images-1252234645.cos.ap-nanjing.myqcloud.com/image-20210305221048243.png" alt="image-20210305221048243"></p>
+<p>设置user.name和user.email的配置信息：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;你的GitHub用户名&quot;</span></span><br><span class="line">git config --global user.email <span class="string">&quot;你的GitHub注册邮箱&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>并生成ssh密钥文件：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;你的GitHub注册邮箱&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>然后敲三次回车，默认不需要设置密码。</p>
+<p>然后找到生成的.ssh文件夹中的id_rsa.pub密钥，并将内容复制。</p>
+<p><img src="https://stone-md-images-1252234645.cos.ap-nanjing.myqcloud.com/image-20210305221529909.png" alt="image-20210305221529909"></p>
+<p>打开<a target="_blank" rel="noopener" href="https://github.com/settings/keys">GitHub-&gt;Setting-&gt;SSH and GPG keys</a>界面，点击New SSH key</p>
+<p><img src="https://stone-md-images-1252234645.cos.ap-nanjing.myqcloud.com/image-20210305221838421.png" alt="image-20210305221838421"></p>
+<p><img src="https://stone-md-images-1252234645.cos.ap-nanjing.myqcloud.com/image-20210305221904851.png" alt="image-20210305221904851"></p>
+<p>Title为标题，请自行键入即可，下侧Key区域则需要把刚刚复制的id_rsa.pub文件内容粘贴进去，然后点击Add SSH Key。并在Git Bash中验证公钥是否设置成功。输入 <strong>ssh <a href="mailto:&#103;&#x69;&#x74;&#x40;&#x67;&#x69;&#116;&#x68;&#117;&#x62;&#46;&#99;&#x6f;&#x6d;">&#103;&#x69;&#x74;&#x40;&#x67;&#x69;&#116;&#x68;&#117;&#x62;&#46;&#99;&#x6f;&#x6d;</a></strong> ：</p>
+<p><img src="https://stone-md-images-1252234645.cos.ap-nanjing.myqcloud.com/image-20210305222539014.png" alt="image-20210305222539014"></p>
+<p>如上，则配置成功。</p>
+<h5 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h5><p>Hexo基于Node.js，Node.js下载地址：<a target="_blank" rel="noopener" href="https://nodejs.org/en/download/">Download Node.js</a>。下载并安装后，需要检测Node.js是否安装成功，方式为：在命令行中输入<strong>Node -v &amp; npm -v</strong>。</p>
+<p><img src="https://stone-md-images-1252234645.cos.ap-nanjing.myqcloud.com/image-20210305223127221.png" alt="image-20210305223127221"></p>
+<p>至此，Hexo所需环境已全部搭建完成。</p>
 
     </div>
 
